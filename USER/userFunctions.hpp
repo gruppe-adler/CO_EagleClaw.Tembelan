@@ -19,5 +19,6 @@ class mcd {
         class zeus_setBuildingDamage {};
         class zeus_spawnExfilBoats {};
         class zeus_teleportPlayers {};
+        class suppress {};
     };
 };
