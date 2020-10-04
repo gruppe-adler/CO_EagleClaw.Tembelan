@@ -23,7 +23,7 @@ playSound "mcd_introMusic";
 
 date params ["_year","_month","_day"];
 private _timeStr = [daytime, "HH:MM"] call BIS_fnc_timeToString;
-[format ["%1.%2.%3 - Um %4 Uhr Ortszeit startet ein Helikopter von Camp Rabin in Richtung Haifa Naval Base.",_day,_month,_year,_timeStr],6] call _fnc_text;
+[format ["%1.%2.%3 - Um %4 Uhr Ortszeit startet ein Helikopter von Camp Rabin in 12. Flotille vor Haifa.",_day,_month,_year,_timeStr],6] call _fnc_text;
 sleep 7;
 
 INTROLAYER cutText ["","BLACK OUT",0.5];
