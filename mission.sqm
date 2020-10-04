@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=6363;
+		nextID=6365;
 	};
 	class MarkerIDProvider
 	{
@@ -4629,13 +4629,13 @@ class Mission
 	class Intel
 	{
 		resistanceWest=0;
-		timeOfChanges=28800;
-		startWeather=0.1905244;
+		timeOfChanges=15591.951;
+		startWeather=0.12581593;
 		startWind=0;
-		startWaves=0.1;
-		forecastWeather=0.1905244;
+		startWaves=0.46623889;
+		forecastWeather=0.12018903;
 		forecastWind=0;
-		forecastWaves=0.1;
+		forecastWaves=0.45498523;
 		forecastLightnings=0.1;
 		rainForced=1;
 		lightningsForced=1;
@@ -4644,14 +4644,16 @@ class Mission
 		year=2020;
 		month=2;
 		day=23;
-		hour=11;
-		minute=-12;
-		startFogDecay=0.014;
-		forecastFogDecay=0.014;
+		hour=6;
+		minute=22;
+		startFogBase=-1000;
+		forecastFogBase=-1000;
+		startFogDecay=0;
+		forecastFogDecay=0;
 	};
 	class Entities
 	{
-		items=2177;
+		items=2179;
 		class Item0
 		{
 			dataType="Layer";
@@ -16626,12 +16628,13 @@ class Mission
 				angles[]={0,3.0504918,6.2818937};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=3180;
 			type="rhsgref_ins_uaz";
-			atlOffset=0.73610687;
+			atlOffset=1.7166138e-005;
 		};
 		class Item273
 		{
@@ -21559,6 +21562,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				disableSimulation=1;
 			};
 			id=3737;
 			type="Land_ConnectorTent_01_floor_dark_F";
@@ -25366,6 +25370,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="VehicleCustomization";
 					expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
 					class Value
@@ -25444,7 +25467,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -25463,7 +25486,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
+				class Attribute3
 				{
 					property="ramp_anim";
 					expression="_this animateSource ['ramp_anim',_value,true]";
@@ -25482,7 +25505,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=4;
 			};
 		};
 		class Item583
@@ -57555,8 +57578,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2339.3892,121.46486,8830.5547};
-				angles[]={6.245204,0,0.34023455};
+				position[]={2354.0117,58.955547,8663.7393};
+				angles[]={5.7281899,0,0.083803542};
 			};
 			id=6292;
 			type="ModuleTracers_F";
@@ -58908,6 +58931,198 @@ class Mission
 			};
 			id=6362;
 			type="Land_HBarrierWall6_F";
+		};
+		class Item2177
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={442.59445,0,7406.3408};
+				angles[]={0,4.7606344,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=6363;
+			type="Land_Destroyer_01_base_F";
+			atlOffset=27.883379;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ShipHangarDoorState";
+					expression="[([_this, 'Land_Destroyer_01_hull_04_F'] call bis_fnc_destroyer01GetShipPart), _value, true] spawn bis_fnc_destroyer01AnimateHangarDoors;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="CustomShipNumber1";
+					expression="[([_this, 'Land_Destroyer_01_hull_01_F'] call bis_fnc_destroyer01GetShipPart), _value, 0] spawn bis_fnc_destroyer01InitHullNumbers;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="CustomShipNumber2";
+					expression="[([_this, 'Land_Destroyer_01_hull_01_F'] call bis_fnc_destroyer01GetShipPart), _value, 1] spawn bis_fnc_destroyer01InitHullNumbers;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="CustomShipNumber3";
+					expression="[([_this, 'Land_Destroyer_01_hull_01_F'] call bis_fnc_destroyer01GetShipPart), _value, 2] spawn bis_fnc_destroyer01InitHullNumbers;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=7;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item2178
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={300.50665,0.33422214,6307.4209};
+				angles[]={0,5.6599908,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=6364;
+			type="Land_Destroyer_01_base_F";
+			atlOffset=17.732374;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ShipHangarDoorState";
+					expression="[([_this, 'Land_Destroyer_01_hull_04_F'] call bis_fnc_destroyer01GetShipPart), _value, true] spawn bis_fnc_destroyer01AnimateHangarDoors;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="CustomShipNumber1";
+					expression="[([_this, 'Land_Destroyer_01_hull_01_F'] call bis_fnc_destroyer01GetShipPart), _value, 0] spawn bis_fnc_destroyer01InitHullNumbers;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="CustomShipNumber2";
+					expression="[([_this, 'Land_Destroyer_01_hull_01_F'] call bis_fnc_destroyer01GetShipPart), _value, 1] spawn bis_fnc_destroyer01InitHullNumbers;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="CustomShipNumber3";
+					expression="[([_this, 'Land_Destroyer_01_hull_01_F'] call bis_fnc_destroyer01GetShipPart), _value, 2] spawn bis_fnc_destroyer01InitHullNumbers;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=7;
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 	class Connections
