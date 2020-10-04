@@ -62,6 +62,7 @@ private _fnc_doSuppressUnit = {
         (_targetASL isEqualTo []) ||
         !([_unit] call ACE_common_fnc_isAwake)
     ) exitWith {
+        _unit setVariable ["eagleclaw_suppressionRunning",false];
         [_fnc_doSuppressUnit,[_unit,_fnc_doSuppressUnit],5 + random 10] call CBA_fnc_waitAndExecute;
     };
 
@@ -79,6 +80,7 @@ private _fnc_doSuppressUnit = {
         (_burstsLeft <= 0)
     },{
         params ["_unit","","","","_fnc_doSuppressUnit"];
+        _unit setVariable ["eagleclaw_suppressionRunning",false];
         if (alive _unit) then {
             [_fnc_doSuppressUnit,[_unit,_fnc_doSuppressUnit],random 10] call CBA_fnc_waitAndExecute;
         };
