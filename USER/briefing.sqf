@@ -8,23 +8,22 @@
 //Lagebeschreibung - Geschehnisse bis jetzt, Feindlage (Stärke, Verhalten, Absicht), eigene Lage (Stärke, Position, Absicht)
 _lage =
 "
-Die Insel Tembelan (vor der Küste Israel) ist durch das Ikan-Regime besetzt, welches vom Iran finanziell und militärisch unterstützt wird. Die demokratischen Grundordnungen sind außer Kraft gesetzt und es herrscht eine strenge Herrschaft durch das Militär.
-Israel ist diese Situation ein Dorn im Auge, da ein verbündeter Irans direkt vor der Küste Israels stationiert ist.
-Aus diesem Grund werden in regelmäßigen Abständen Spionageflüge seitens Israel durchgeführt. Am 19.02.2020 wurde der Kontakt zur Maschine unterbrochen. Zwei Tage danach zeigen Satellitenaufnahmen die Absturzstelle und die Aktivität von Ikan-Streitkräften.
-Ebenfalls gibt es Aufnahmen vom LKW's die Teile des Flugzeuges in die Stadt 'Ikan Toka' bringen. Darunter wird auch der Flugschreiber vermutet. Dieser muss geborgen werden.
-<br/><br/>
-In eben dieser Stadt wird auch der Anführer des Ikan-Regimes vermutet. Der Abschuss des Flugzeugs legitimiert den Israelischen Staat einen Angriff auf den Anführer durchzuführen. Die Stadt wird allerdings durch eine Luftabwehr- und Artilleriestellung gesichert und ist massiv befestigt. Deshalb muss zuerst ein infanteristischer Angriff erfolgen...
+Ein Monat ist vergangen. Die von Ihnen geborgene Blackbox hat zweifelsfrei bewiesen, dass das Spionageflugzeug vom Ikan-Regime abgeschossen wurde. 
+Das israelische Parlament hat den Abschuss verurteilt und eben die Militäroperation zur Invasion der Insel freigegeben.
+Das Ikan-Regime hat den Tod ihres Anführers wider Erwarten zum neuen Aufschwung genutzt. Auf der gesamten Insel wurden Stellungen gebaut und Minenfelder gelegt.
+
+Sie sind Teil einer Invasion und greifen die westliche Seite der Insel an. Dabei wurde Ihnen der Strandabschnitt Golani zugeteilt. Bleiben Sie in ihrem Abschnitt. Nur dieser wurde durch ständigen Beschuss von Minen befreit. 
+Unterstützt werden Sie durch die Bordkanonen und den Cruise Missiles der INS Lahav.
 ";
 
 //Auftragsbeschreibung - Darlegung des Missionszieles
 _auftrag =
 "
-1. Verlegen Sie von der Wartestellung auf Angriffspostion<br/>
-2. Planen und Durchführen eines Angriffs auf die Luftabwehrstellung<br/>
-3. Nach Ausschalten der Stellung, Versteck des Anführers durch Beobachtung der Stadt ausfindig machen<br/>
-4. Gebäude per Laser markieren und ggf. nachrückende Feinde ausschalten<br/>
-5. Nach Angriff auf Stadt durch verbündete Einheiten --> Stadt einnehmen und Flugschreiber bergen + Abschuss des Anführers bestätigen<br/>
-6. Exfil am nörlichen Strand durch verbündete Einheiten<br/>
+1. Vorbereiten auf der INS Lahav<br/>
+2. Durchführen des Angriffs auf die Strandbefestigungen<br/>
+3. Stürmen der Bunkerstellungen<br/>
+4. Bunkerstellungen nach Intel durchsuchen<br/>
+5. Exfil an alter westlicher Hijau Militarz Substation<br/>
 
 ";
 
@@ -35,6 +34,6 @@ _durchfuehrung =
 //Einsatzunterstützung - Informationen über unterstützende Einheiten (Luft, Artillerie, etc.) und Nachschub / Versorgungsmöglichkeiten
 _einsatzunterstuetzung =
 "
-Spezialausrüstung: Javelin zur Bekämpfung von Panzerfahrzeugen<br/>
-Stomper Support Fahrzeug: Gesteuert durch Javelin-Team mit Nachschubmaterial
+Spezialausrüstung: Keine<br/>
+Sonstige Unterstützung: Situationsbedingt unterstützung durch INS Lahav<br/>
 ";

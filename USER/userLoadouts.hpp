@@ -77,7 +77,7 @@ class co_fallenEagle {
             vest = "LOP_V_CarrierLite_OLV";
             addItemsToVest[] = {LIST_2("SmokeShell"),LIST_2("HandGrenade")};
             backpack = "B_Carryall_oli";
-            addItemsToBackpack[] = {};
+            addItemsToBackpack[] = {LIST_4("150Rnd_762x54_Box_Tracer")};
             headgear = "rhsusf_opscore_fg_pelt_cam";
             goggles = "rhs_googles_yellow";
             map = "ItemMap";

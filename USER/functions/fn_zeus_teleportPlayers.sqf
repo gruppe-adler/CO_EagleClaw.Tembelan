@@ -12,12 +12,12 @@ missionNamespace setVariable ["ace_map_BFT_Enabled",true,true];
 mcd_introHeli setFuel 1;
 mcd_introHeli engineOn true;
 
-sleep 10;
+sleep 5;
 
 [[],"USER\scripts\intro.sqf"] remoteExec ["execVM",0,false];
 
 sleep 20;
-skipTime ((24 - dayTime) + 5.83);
+skipTime ((24 - dayTime) + 6.25);
 
 {
     [{
@@ -33,4 +33,4 @@ deleteVehicle mcd_introHeli; */
 // DEBUG
 /* mcd_introHeli setFuel 0;
 mcd_introHeli engineOn false;
-setDate [2020, 2, 23, 10, 50]; */
+setDate [2020, 2, 23, 6, 15]; */

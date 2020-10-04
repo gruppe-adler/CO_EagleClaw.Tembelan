@@ -12,9 +12,9 @@ private _intelDisplayName = [
 private _intelDiaryText = [
 "Dokument mit dem Siegel des IKAN-Regimes. Der Text ist persisch.
 
-Es handelt sich offensichtlich um eine Art medizinischen Bericht. Der Bericht beschreibt kurz die wichtigsten Daten des Gefangenen. Gesundheitlich geht es ihm nicht gut. Der Patient scheint nicht bei Bewusstsein zu sein und befindet sich in einem Gefangenlager, welches in der Stadt "Rusak Iman" liegt. Die Nationalität des Gefangenen ist... das kann nicht sein... israelisch. Zudem ist er Militärangehöriger. Es hat offesichtlich doch ein Pilot überlebt. Wir müssen ihm helfen. 
-
-"] select _intelID;
+Es handelt sich offensichtlich um eine Art medizinischen Bericht. Der Bericht beschreibt kurz die wichtigsten Daten des Gefangenen. 
+Gesundheitlich geht es ihm nicht gut. Der Patient scheint nicht bei Bewusstsein zu sein und befindet sich in einem Gefangenlager, welches in der Stadt Rusak Iman liegt. 
+Die Nationalität des Gefangenen ist... das kann nicht sein... israelisch. Zudem ist er Militärangehöriger. Es hat offensichtlich doch ein Pilot überlebt. Wir müssen ihm helfen."] select _intelID;
 
 private _title = [
     "Intel (Ordner)"

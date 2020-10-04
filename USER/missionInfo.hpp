@@ -3,7 +3,7 @@
 */
 
 author = "XiviD & McD für Gruppe Adler";                                               // Missionsersteller
-onLoadName = "COOP FALLEN EAGLE";                                                   // Name der Mission
+onLoadName = "COOP EAGLE CLAW";                                                   // Name der Mission
 onLoadMission = "";                                                             // Beschreibung der Mission (wird im Ladebildschirm unterhalb des Ladebildes angezeigt)
 loadScreen = "data\loadpic.paa";                                                // Ladebild
 overviewPicture = "";                                                           // Bild, das in der Missionsauswahl angezeigt wird
