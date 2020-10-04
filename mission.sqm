@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1880;
+		nextID=1913;
 	};
 	class Camera
 	{
-		pos[]={2296.3188,12.600014,8226.2344};
-		dir[]={-0.59463674,-0.49039724,0.63731408};
-		up[]={-0.33467025,0.87134433,0.35868728};
-		aside[]={0.7312029,3.0954834e-007,0.68223739};
+		pos[]={2576.8669,143.79362,7802.4487};
+		dir[]={0.77211142,-0.6020242,-0.20412724};
+		up[]={0.58215135,0.79831517,-0.15390459};
+		aside[]={-0.25560665,8.5122883e-007,-0.96682602};
 	};
 };
 binarizationWanted=0;
@@ -16610,12 +16610,13 @@ class Mission
 				angles[]={0,3.0504918,6.2818937};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=3180;
 			type="rhsgref_ins_uaz";
-			atlOffset=0.73610687;
+			atlOffset=1.7166138e-005;
 		};
 		class Item272
 		{
@@ -39131,8 +39132,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2708.8442,134.56212,7857.7017};
-				angles[]={0.041978233,0,0.28961924};
+				position[]={2734.1226,141.57518,7855.3521};
+				angles[]={0.02399601,0,0.25249267};
 			};
 			side="Empty";
 			flags=4;
@@ -39147,8 +39148,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2709.1892,133.95341,7857.6206};
-				angles[]={0.041978233,0,0.28961924};
+				position[]={2734.4675,140.95123,7855.271};
+				angles[]={0.02399601,0,0.25249267};
 			};
 			side="Empty";
 			flags=4;
@@ -39163,8 +39164,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2708.9253,134.57253,7858.0303};
-				angles[]={0.041978233,0,0.28961924};
+				position[]={2734.2036,141.58826,7855.6807};
+				angles[]={0.02399601,0,0.25249267};
 			};
 			side="Empty";
 			flags=4;
@@ -50507,7 +50508,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={2147.741,1.7363546,7944.082};
-			angle=3.5878024;
+			angle=3.5878022;
 			class Attributes
 			{
 				name="eagleclaw_suppressionZone";
@@ -50898,7 +50899,7 @@ class Mission
 			fillName="Grid";
 			a=50;
 			b=214.5724;
-			angle=228.49048;
+			angle=228.49046;
 			id=5984;
 		};
 		class Item1893
@@ -50990,7 +50991,7 @@ class Mission
 			text="IDF-5";
 			type="mil_arrow2";
 			colorName="ColorWEST";
-			angle=113.0219;
+			angle=113.02189;
 			id=5991;
 			atlOffset=15;
 		};
@@ -58125,7 +58126,7 @@ class Mission
 			fillName="Grid";
 			a=50;
 			b=173.35353;
-			angle=95.052559;
+			angle=95.052551;
 			id=6323;
 		};
 		class Item2137
@@ -59093,8 +59094,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2919.1453,135.72681,7938.9438};
-				angles[]={6.2691875,0,6.0382109};
+				position[]={2595.4807,107.61436,7755.3682};
 			};
 			side="Empty";
 			flags=4;
@@ -59104,7 +59104,6 @@ class Mission
 			};
 			id=6366;
 			type="Land_File1_F";
-			atlOffset=-0.0010070801;
 		};
 	};
 	class Connections
