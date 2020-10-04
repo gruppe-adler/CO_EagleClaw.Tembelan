@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=6403;
+		nextID=6404;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1913;
+		nextID=1979;
 	};
 	class Camera
 	{
-		pos[]={2908.937,39.159775,7167.4658};
-		dir[]={0.72408623,-0.63149625,-0.27778953};
-		up[]={0.58971179,0.77521312,-0.22623681};
-		aside[]={-0.35820791,8.0163591e-007,-0.93369728};
+		pos[]={2900.3635,44.099842,7158.6206};
+		dir[]={0.48259985,-0.66920078,0.56526649};
+		up[]={0.43458471,0.74291664,0.50902826};
+		aside[]={0.7605679,8.0163591e-007,-0.64934218};
 	};
 };
 binarizationWanted=0;
@@ -774,7 +774,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Scenario";
 		class Attribute0
@@ -4629,7 +4629,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2175;
+		items=2176;
 		class Item0
 		{
 			dataType="Layer";
@@ -9764,7 +9764,7 @@ class Mission
 				};
 			};
 			id=731;
-			atlOffset=-45.107185;
+			atlOffset=-19.18425;
 		};
 		class Item4
 		{
@@ -49304,7 +49304,7 @@ class Mission
 			fillName="Grid";
 			a=50;
 			b=214.5724;
-			angle=228.49046;
+			angle=228.49043;
 			id=5984;
 		};
 		class Item1888
@@ -49396,7 +49396,7 @@ class Mission
 			text="IDF-5";
 			type="mil_arrow2";
 			colorName="ColorWEST";
-			angle=113.02189;
+			angle=113.02187;
 			id=5991;
 			atlOffset=15;
 		};
@@ -57502,13 +57502,13 @@ class Mission
 				position[]={2595.4807,107.61436,7755.3682};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				init="call{null = [this,0] call mcd_fnc_addIntelInteraction;}";
 			};
 			id=6366;
 			type="Land_File1_F";
+			atlOffset=0.81533813;
 		};
 		class Item2173
 		{
@@ -57626,16 +57626,27 @@ class Mission
 			id=6392;
 			atlOffset=0.50693321;
 		};
+		class Item2175
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2907.2639,28.288088,7165.813};
+			};
+			init="call{if (isServer) then { " \n "    waitUntil {{!(!alive _x && !isNull _x)} count (synchronizedObjects this) == 0}; " \n "    removeFromRemainsCollector (synchronizedObjects this) " \n "}; " \n "}";
+			id=6403;
+			type="Logic";
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=93;
+			nextID=96;
 		};
 		class Links
 		{
-			items=93;
+			items=96;
 			class Item0
 			{
 				linkID=0;
@@ -58561,6 +58572,36 @@ class Mission
 				linkID=92;
 				item0=6384;
 				item1=178;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item93
+			{
+				linkID=93;
+				item0=5633;
+				item1=6403;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item94
+			{
+				linkID=94;
+				item0=5631;
+				item1=6403;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item95
+			{
+				linkID=95;
+				item0=5635;
+				item1=6403;
 				class CustomData
 				{
 					type="Sync";
