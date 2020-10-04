@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=6367;
+		nextID=6403;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2677.9385,264.04831,7948.0044};
-		dir[]={-0.78799945,-0.589221,0.17925417};
-		up[]={-0.57467675,0.80780858,0.1307252};
-		aside[]={0.22182685,1.0514632e-006,0.9751358};
+		pos[]={2908.937,39.159775,7167.4658};
+		dir[]={0.72408623,-0.63149625,-0.27778953};
+		up[]={0.58971179,0.77521312,-0.22623681};
+		aside[]={-0.35820791,8.0163591e-007,-0.93369728};
 	};
 };
 binarizationWanted=0;
@@ -165,13 +165,17 @@ addons[]=
 	"A3_Props_F_Orange_Humanitarian_Camps",
 	"CUP_Desert2_Config",
 	"rhs_c_heavyweapons",
-	"A3_Structures_F_Items_Documents"
+	"A3_Structures_F_Items_Documents",
+	"A3_Characters_F_Orange_Facewear",
+	"ace_goggles",
+	"ace_hearing",
+	"ace_gforces"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=86;
+		items=89;
 		class Item0
 		{
 			className="A3_Modules_F_Heli";
@@ -740,6 +744,27 @@ class AddonsMetaData
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
+		class Item86
+		{
+			className="A3_Characters_F_Orange";
+			name="Arma 3 Orange - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item87
+		{
+			className="ace_goggles";
+			name="ACE3 - Goggles";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item88
+		{
+			className="ace_hearing";
+			name="ACE3 - Hearing";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
 	};
 };
 randomSeed=938738;
@@ -749,7 +774,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -4604,7 +4629,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2173;
+		items=2175;
 		class Item0
 		{
 			dataType="Layer";
@@ -41696,7 +41721,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2911.7356,30.204712,7164.7891};
+				position[]={2913.6318,30.257893,7163.4224};
 				angles[]={6.1617851,5.1568608,0.11548408};
 			};
 			side="Empty";
@@ -41712,8 +41737,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2917.2673,29.073557,7161.9453};
-				angles[]={6.1617856,5.4875178,0.1016485};
+				position[]={2917.386,28.958109,7160.8994};
+				angles[]={6.1617856,0.55133206,0.1016485};
 			};
 			side="Empty";
 			flags=4;
@@ -57485,16 +57510,132 @@ class Mission
 			id=6366;
 			type="Land_File1_F";
 		};
+		class Item2173
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2719.4258,134.80661,7704.3687};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						rank="SERGEANT";
+					};
+					id=6382;
+					type="LOP_ChDKZ_Infantry_TL";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2718.0898,134.58684,7701.9209};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=6383;
+					type="LOP_ChDKZ_Infantry_MG";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2720.6343,134.61601,7701.8408};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=6384;
+					type="LOP_ChDKZ_Infantry_MG";
+				};
+			};
+			class Attributes
+			{
+				speedMode="LIMITED";
+			};
+			id=6381;
+		};
+		class Item2174
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2904.6536,27.325474,7138.9248};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="U_B_HeliPilotCoveralls";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="rhsusf_ANPVS_14";
+										count=1;
+									};
+								};
+							};
+							goggles="G_Aviator";
+							headgear="H_Cap_headphones";
+						};
+					};
+					id=6393;
+					type="rhsusf_airforce_pilot";
+					atlOffset=0.50693321;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=6392;
+			atlOffset=0.50693321;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=90;
+			nextID=93;
 		};
 		class Links
 		{
-			items=90;
+			items=93;
 			class Item0
 			{
 				linkID=0;
@@ -58389,6 +58530,36 @@ class Mission
 			{
 				linkID=89;
 				item0=6366;
+				item1=178;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item90
+			{
+				linkID=90;
+				item0=6382;
+				item1=178;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item91
+			{
+				linkID=91;
+				item0=6383;
+				item1=178;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item92
+			{
+				linkID=92;
+				item0=6384;
 				item1=178;
 				class CustomData
 				{
