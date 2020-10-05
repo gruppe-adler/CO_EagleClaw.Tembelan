@@ -306,7 +306,7 @@ class co_fallenEagle {
             primaryWeaponMuzzle = "muzzle_snds_M";
             primaryWeaponPointer = "rhsusf_acc_anpeq15_bk";
             primaryWeaponOptics = "rhsusf_acc_ACOG_RMR";
-            secondaryWeapon = "rhs_weap_m72a7";
+            secondaryWeapon = "rhs_weap_M136_hedp";
             handgunWeapon = "hgun_Pistol_heavy_01_green_F";
             handgunWeaponMuzzle = "hlc_muzzle_Evo40";
             handgunWeaponPointer = "hlc_acc_DBALPL";
